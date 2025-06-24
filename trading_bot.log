@@ -1,0 +1,2 @@
+2025-06-24 22:26:20,694 - INFO - Placing stop-limit BUY order for 2.0 B at 123.0 with stop at 23.0
+2025-06-24 22:26:21,165 - ERROR - Stop-limit order failed: APIError(code=-2014): API-key format invalid.
