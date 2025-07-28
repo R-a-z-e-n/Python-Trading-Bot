@@ -5,7 +5,6 @@ import json
 from typing import Dict, Optional
 from datetime import datetime
 
-# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -21,7 +20,7 @@ class BasicBot:
         if testnet:
             self.client.API_URL = 'https://testnet.binancefuture.com'
         
-        # Initialize logger
+        
         self.logger = logging.getLogger(__name__)
         
     def _log_api_response(self, action: str, response: Dict) -> None:
@@ -93,11 +92,11 @@ class BasicBot:
             self.logger.error(f"Failed to get order status: {str(e)}")
             raise
 
-# CLI Interface
+
 def main():
-    # Replace with your API credentials
-    API_KEY = 'your_api_key'
-    API_SECRET = 'your_api_secret'
+    
+    API_KEY = 'my_api_key'
+    API_SECRET = 'my_api_secret'
     
     bot = BasicBot(API_KEY, API_SECRET, testnet=True)
     
